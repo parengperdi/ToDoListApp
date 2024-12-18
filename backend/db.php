@@ -8,7 +8,7 @@ $host = "localhost";
 $user = "root";
 $password = "12345";       // Replace with your MySQL password
 $database = "todo_list";
-$port = 3307;              // MySQL port for XAMPP
+$port = 3306;              // MySQL port for XAMPP
 
 // Establish the connection
 $conn = new mysqli($host, $user, $password, $database, $port);
@@ -19,5 +19,5 @@ if ($conn->connect_error) {
 }
 
 // Optional: Uncomment for testing connection
-// echo "Connected successfully";
+echo "Connected successfully";
 ?>
